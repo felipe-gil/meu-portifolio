@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 1.8;
+    color:rgb(14, 13, 13);
+    padding: 2.5rem;
+    
+}
+html {
+    font-size: 62.5%;
+}
+header {
+    height: 90vh;
+    background-image:url(https://blog.ead.unipar.br/wp-content/uploads/2021/04/inovacao-e-tecnologia.jpg);
+    position:relative;
+    
+}
+.textoHeader{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    left: 10%;
+    top: 50%;
+}
+.textoHeader h1{
+    font-size: 3rem;
+    letter-spacing: 1rem;
+    text-shadow: 0.2rem 0.2rem 0.2rem black;
+    animation: entrada 1s;
+    
+}
+.textoHeader h2{
+    font-size: 1.7rem;
+    letter-spacing: 1.5rem;
+    font-weight: 800;
+    text-shadow: 1rem 1rem 1rem black;
+    margin-bottom: 1rem;
+    animation: saida 1s;
+}
+.textoHeader a,
+.textoHeader a:visited{
+    text-decoration: none;
+    background-color: rgb(8, 8, 8);
+    border-radius: 4rem;
+    display: inline-block;
+    padding: 0.5rem 0.5rem 0.5rem;
+    color: rgb(241, 237, 237);
+    animation: entradaBotao 1s;
+}
+.textoHeader a:hover{
+    transform: translateY(-0.5rem);
+    box-shadow: .5rem .5rem 1rem black;
+}
+.textoHeader a:active{
+    transform: translateY(-0.5rem);
+    box-shadow: .5rem .5rem 1rem black;
+}
+.foto {
+    position: absolute;
+    top: 0.5rem;
+    right: 5rem;
+    
+}
+.foto img{
+    height: 20rem;
+    margin-right: 18rem;
+    margin-top: 5rem;
+    border-radius: 50%;
+}
+main .sobreMim{
+    text-align: center;
+    background-image: linear-gradient(to bottom left, rgb(0, 128, 128), rgb(21, 67, 96));
+      
+}
+main .sobreMim h3{
+    font-size: 4rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+}
+main .sobreMim h4{
+    font-size: 3rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 2rem;    
+}
+main .sobreMim p{
+    text-align: justify;
+    font-size: 2rem;
+    font-weight: 300;
+    margin-bottom: 2rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+.habilidades {       
+    position: relative;
+    margin-top: -20rem;
+    padding: 20rem 0;
+    height: 60vh;
+  }
+  main .habilidades h1{
+    font-size: 5rem;
+  }
+footer {
+    background-color: rgb(0, 128, 128);
+    margin-top: -2.5rem;
+}
+.contato{
+    text-align: center;
+}
+.redes{
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    top: 10rem;
+    color: black;
+}
+.fa-brands {
+    color: black;
+  }
+.direitos {
+    text-align: center;
+    margin-left: 3vh;
+    position: relative;
+}
+@keyframes entrada{
+    0%{
+        opacity: 0;
+        transform: translateX(-10rem);
+    }
+    80%{
+        transform: translateX(10rem);
+    }
+    100%{
+        opacity:1;
+        transform: translateX(0);
+    }
+}
+@keyframes saida{
+    0%{
+        opacity: 0;
+        transform: translateX(10rem);
+    }
+    80%{
+        transform: translateX(-10rem);
+    }
+    100%{
+        opacity:1;
+        transform: translateX(0);
+    }
+}
+@keyframes entradaBotao{
+    0%{
+        opacity: 0;
+        transform: translateY(10rem);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@media screen and (max-width: 600px) {
+    .textoHeader h1, .textoHeader h2{
+        color: white; 
+    }
+        
+    .textoHeader a,
+.textoHeader a:visited{
+    text-decoration: none;
+    background-color: rgb(245, 241, 241);
+    border-radius: 4rem;
+    display: inline-block;
+    padding: 0.5rem 0.5rem 0.5rem;
+    color: rgb(14, 13, 13);
+    animation: entradaBotao 1s;
+}
+  }
